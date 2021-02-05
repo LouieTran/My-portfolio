@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style/css/index.css">
+    <link rel="stylesheet" href="./fonts/fontawesome-free-5.15.1-web/css/all.css">
+
+    <title>Portfolio Louie</title>
+</head>
+<body>
+    <!-- HEADER  -->
+
+    <div class="wrapper">
+        <header class="header">
+            <nav class="header__navbar">
+                <ul class="header__navbar-list">
+                    <li class="header__navbar-list-item"><a href="#container">home</a></li>
+                    <li class="header__navbar-list-item"><a href="#">about</a></li>
+                    <li class="header__navbar-list-item"><a href="#">resume</a></li>
+                    <li class="header__navbar-list-item"><a href="#">dkills</a></li>
+                    <li class="header__navbar-list-item"><a href="#">portfolio</a></li>
+                    <li class="header__navbar-list-item"><a href="#">contact</a></li>
+                </ul>
+            </nav>
+            <label for="nav__mobile-input" class="header-icon"><i class="fas fa-bars"></i></label>
+            <input type="checkbox" hidden name="" class="nav_input" id="nav__mobile-input">
+            <label for="nav__mobile-input" class="header-overlay"></label>
+            <nav class="header__mobile">
+                <ul class="header__mobile-list">
+                    <li class="header__mobile-list-item"><a href="#">Home</a></li>
+                    <li class="header__mobile-list-item"><a href="#">About</a></li>
+                    <li class="header__mobile-list-item"><a href="#">Resume</a></li>
+                    <li class="header__mobile-list-item"><a href="#">Skills</a></li>
+                    <li class="header__mobile-list-item"><a href="#">Portfolio</a></li>
+                    <li class="header__mobile-list-item"><a href="#">Contact</a></li>
+                </ul>
+                <label for="nav__mobile-input" class="header__mobile-close"><i class="fas fa-times"></i></label>
+            </nav>
+        </header>
+        <section class="header__content">
+            <div class="header__content-info header__content-1">
+                <h1>about me</h1>
+                <button class="header__content-info-like"><a href="#"><i class="fas fa-check"></i> like 10k</a></button>
+                <button class="header__content-info-cv"><a href="#"><i class="fas fa-book"></i> Get My CV</a></button>
+                <button class="header__content-info-fb"><a href="#">Follow @LouieTran</a></button>
+            </div>
+            <div class="header__content-img header__content-1">
+                <img src="./images/5.png" alt="">
+            </div>
+        </section>
+        <div class="banner">
+            <ul class="banner__list">
+                <li class="banner__list-item"><a href="#">
+                    <img src="./images/mypic/mypic1.jpg" alt="">
+                </a></li>
+                <li class="banner__list-item"><a href="#">
+                    <img src="./images/mypic/mypic2.jpg" alt="">
+                </a></li>
+                <li class="banner__list-item"><a href="#">
+                    <img src="./images/mypic/mypic3.jpg" alt="">
+                </a></li>
+                <li class="banner__list-item"><a href="#">
+                    <img src="./images/mypic/mypic4.jpg" alt="">
+                </a></li>
+                <li class="banner__list-item"><a href="#">
+                    <img src="./images/mypic/mypic5.jpg" alt="">
+                </a></li>
+                <li class="banner__list-item"><a href="#">
+                    <img src="./images/mypic/mypic6.jpg" alt="">
+                </a></li>
+            </ul>
+        </div>
+        <div id="container" class="container">
+            
+           
+        </div>
+        <footer class="footer">
+
+        </footer>
+    </div>
+    
+
+    <script>
+        var title='Học Javascript tại F8';
+        function run(title) {
+            var start = title.indexOf('Javascript');
+            
+            var end = title.length;
+            console.log(start+end);
+            var language = title.slice(start,start+end);
+            var rest = title.slice(start+end+1);
+            return `Language is ${language} and rest is ${rest}`;
+        }
+        run(title);
+    </script>
+    <script src="./style/js/bootstrap.min.js"></script>
+</body>
+</html>
